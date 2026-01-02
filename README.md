@@ -1,3 +1,35 @@
+# 🧠 Skill-Based Job Recommendation System
+
+This project implements an **AI-driven job recommendation system** that analyzes resumes, predicts suitable job roles, and identifies missing skills required for each role. The system combines **text-based machine learning** with **language-model-powered skill extraction and explanation**, and is deployed as an interactive **Streamlit web application**.
+
+---
+
+## 📌 Project Overview
+
+The application accepts resumes in PDF or plain text format, extracts relevant skills, and recommends job roles based on learned relationships between skills and job postings.  
+In addition to role prediction, the system performs **skill gap analysis** and provides **human-readable explanations** for missing skills to guide users on what to learn next.
+
+---
+
+## 🧩 System Components
+
+- **Machine Learning**
+  - TF-IDF feature representation for skills
+  - Linear multi-class classifier trained using stochastic gradient descent
+  - Ranking-based output (Top-K job role recommendations)
+
+- **Language Model Integration**
+  - Extracts structured skills from unstructured resume text
+  - Generates concise explanations for missing skills
+
+- **Application Layer**
+  - Built using Streamlit
+  - Supports resume upload (PDF) or manual text input
+  - Displays job match scores, skill match, and missing skills
+
+---
+
+
 # 🚀 How to Run the Project
 
 This guide walks you through setting up the environment, training the model, and running the Streamlit application.
